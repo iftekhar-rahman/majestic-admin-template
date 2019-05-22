@@ -12,7 +12,7 @@
         <link href="css/font-awesome.min.css" rel="stylesheet">
 
         <!--Plugins-->
-        <!-- <link href="css/owl.carousel.min.css" rel="stylesheet"> -->
+        <link href="css/vendor.bundle.base.css" rel="stylesheet">
         <!-- <link href="css/nice-select.css" rel="stylesheet"> -->
 
         <!--Theme specific styles-->
@@ -29,163 +29,7 @@
         <![endif]-->
     </head>
     <body>
-
-
-        <!-- .container-scroller starts -->
-        <div class="container-scroller">
-            <!-- .site-navbar starts -->
-            <div class="site-navbar">
-                <div class="col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
-                    <div class="navbar-brand-wrapper d-flex justify-content-center">
-                        <div class="navbar-brand-inner-wrapper d-flex justify-content-between align-items-center w-100">  
-                            <a class="navbar-brand brand-logo" href="#"><img src="img/logo.svg" alt="logo"/></a>
-                            <!-- .brand-logo ends -->
-                            <a class="navbar-brand brand-logo-mini d-none" href="#"><img src="img/logo-mini.svg" alt="logo"/></a>
-                            <!-- .brand-logo-mini ends -->
-                            <button class="navbar-toggler navbar-toggler align-self-center" type="button" data-toggle="minimize">
-                                <span class="bar1"></span>
-                                <span class="bar2"></span>
-                                <span class="bar3"></span>
-                            </button>
-                            <!-- .navbar-toggler ends -->
-                        </div>  
-                    </div><!-- .navbar-brand-wrapper ends -->
-                    <div class="navbar-menu-wrapper d-flex align-items-center justify-content-end">
-                        <ul class="navbar-nav mr-lg-4 w-100">
-                            <li class="nav-item nav-search d-none d-lg-block w-100">
-                                <div class="input-group">
-                                    <div class="input-group-prepend">
-                                        <span id="search">
-                                            <i class="fa fa-search"></i>
-                                        </span>
-                                    </div>
-                                    <input type="text" placeholder="Search now" aria-label="search" aria-describedby="search">
-                                </div>
-                            </li><!-- .nav-search ends -->
-                        </ul><!-- .nav-item ends -->
-                        <ul class="navbar-nav navbar-nav-right">
-                            <li class="nav-item dropdown mr-1">
-                                <a class="nav-link count-indicator dropdown-toggle d-flex justify-content-center align-items-center" id="messageDropdown" href="#" data-toggle="dropdown">
-                                    <i class="fa fa-star"></i>
-                                    <span class="count"></span>
-                                </a>
-                                <div class="dropdown-menu dropdown-menu-right navbar-dropdown" aria-labelledby="messageDropdown">
-                                    <p class="mb-0 font-weight-normal float-left dropdown-header">Messages</p>
-                                    <a class="dropdown-item">
-                                        <div class="item-thumbnail">
-                                            <img src="img/face4.jpg" alt="image" class="profile-pic">
-                                        </div>
-                                        <div class="item-content flex-grow">
-                                            <h6 class="ellipsis font-weight-normal">David Grey
-                                            </h6>
-                                            <p class="font-weight-light small-text text-muted mb-0">
-                                            The meeting is cancelled
-                                            </p>
-                                        </div>
-                                    </a><!-- .dropdown-item ends -->
-                                    <a class="dropdown-item">
-                                        <div class="item-thumbnail">
-                                            <img src="img/face4.jpg" alt="image" class="profile-pic">
-                                        </div>
-                                        <div class="item-content flex-grow">
-                                            <h6 class="ellipsis font-weight-normal">Tim Cook
-                                            </h6>
-                                            <p class="font-weight-light small-text text-muted mb-0">
-                                            New product launch
-                                            </p>
-                                        </div>
-                                    </a><!-- .dropdown-item ends -->
-                                    <a class="dropdown-item">
-                                        <div class="item-thumbnail">
-                                            <img src="img/face4.jpg" alt="image" class="profile-pic">
-                                        </div>
-                                        <div class="item-content flex-grow">
-                                            <h6 class="ellipsis font-weight-normal">Johnson
-                                            </h6>
-                                            <p class="font-weight-light small-text text-muted mb-0">
-                                            Upcoming board meeting
-                                            </p>
-                                        </div>
-                                    </a><!-- .dropdown-item ends -->
-                                </div>
-                            </li><!-- .nav-item ends -->
-                            <li class="nav-item dropdown mr-4">
-                                
-                                <!-- <a class="nav-link count-indicator dropdown-toggle d-flex align-items-center justify-content-center notification-dropdown" id="notificationDropdown" href="#" data-toggle="dropdown">
-                                    <i class="fa fa-bell mx-0"></i>
-                                    <span class="count"></span>
-                                </a>
-                                <div class="dropdown-menu dropdown-menu-right navbar-dropdown" aria-labelledby="notificationDropdown">
-                                    <p class="mb-0 font-weight-normal float-left dropdown-header">Notifications</p>
-                                    <a class="dropdown-item">
-                                        <div class="item-thumbnail">
-                                            <div class="item-icon bg-success">
-                                                <i class="fa fa-star"></i>
-                                            </div>
-                                        </div>
-                                        <div class="item-content">
-                                            <h6 class="font-weight-normal">Application Error</h6>
-                                            <p class="font-weight-light small-text mb-0 text-muted">
-                                            Just now
-                                            </p>
-                                        </div>
-                                    </a>
-                                    <a class="dropdown-item">
-                                        <div class="item-thumbnail">
-                                            <div class="item-icon bg-warning">
-                                            <i class="mdi mdi-settings mx-0"></i>
-                                            </div>
-                                        </div>
-                                        <div class="item-content">
-                                            <h6 class="font-weight-normal">Settings</h6>
-                                            <p class="font-weight-light small-text mb-0 text-muted">
-                                            Private message
-                                            </p>
-                                        </div>
-                                    </a>
-                                    <a class="dropdown-item">
-                                        <div class="item-thumbnail">
-                                            <div class="item-icon bg-info">
-                                                <i class="mdi mdi-account-box mx-0"></i>
-                                            </div>
-                                        </div>
-                                        <div class="item-content">
-                                            <h6 class="font-weight-normal">New user registration</h6>
-                                            <span class="font-weight-light small-text mb-0 text-muted">
-                                            2 days ago
-                                            </span>
-                                        </div>
-                                    </a>
-                                </div> -->
-                            </li>
-                            <!-- <li class="nav-item nav-profile dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" id="profileDropdown">
-                                    <img src="images/faces/face5.jpg" alt="profile"/>
-                                    <span class="nav-profile-name">Louis Barnett</span>
-                                </a>
-                                <div class="dropdown-menu dropdown-menu-right navbar-dropdown" aria-labelledby="profileDropdown">
-                                    <a class="dropdown-item">
-                                        <i class="mdi mdi-settings text-primary"></i>
-                                    Settings
-                                    </a>
-                                    <a class="dropdown-item">
-                                        <i class="mdi mdi-logout text-primary"></i>
-                                    Logout
-                                    </a>
-                                </div>
-                            </li> -->
-                        </ul><!-- .nav-item ends -->
-                    </div><!-- .navbar-menu-wrapper ends -->
-                </div><!-- .col ends -->
-            </div>
-            <!-- .site-navbar ends -->
-        </div>
-        <!-- .container-scroller ends -->
-
-        <br/>
-        <br/>
-        <br/>
-        <br/>
+    
 
     <div class="container-fluid">
 
@@ -395,9 +239,9 @@
                             <div class="card-body">
                                 <h3 class="card-title">Cash deposits</h3>
                                 <p class="mb-4">To start a blog, think of a topic about and first brainstorm party is ways to write details</p>
-                                <!-- <div id="cash-deposits-chart-legend" class="d-flex justify-content-center pt-3"></div> -->
-                                <!-- <canvas id="cash-deposits-chart"></canvas> -->
-                                <img style="width: 100%" src="img/chart-1.png" alt="">
+                                <div id="cash-deposits-chart-legend" class="d-flex justify-content-center pt-3"></div>
+                                <canvas id="cash-deposits-chart"></canvas>
+                                <!-- <img style="width: 100%" src="img/chart-1.png" alt=""> -->
                             </div>
                         </div>
                     </div>
@@ -408,10 +252,10 @@
                                 <h1>$ 28835</h1>
                                 <h4>Gross sales over the years</h4>
                                 <p class="text-muted">Today, many people rely on computers to do homework, work, and create or store useful information. Therefore, it is important </p>
-                                <!-- <div id="total-sales-chart-legend"></div>  -->
+                                <div id="total-sales-chart-legend"></div> 
                             </div>
-                            <!-- <canvas id="total-sales-chart"></canvas> -->
-                            <img src="img/chart-2.png" alt="">
+                            <canvas id="total-sales-chart"></canvas>
+                            <!-- <img src="img/chart-2.png" alt=""> -->
                         </div>
                     </div>
                 </div>
@@ -549,8 +393,12 @@
         <script src="js/bootstrap.bundle.min.js"></script>       
 
         <!--Plugins-->
-        <!-- <script src="js/owl.carousel.min.js"></script> -->
-        <!-- <script src="js/jquery.nice-select.min.js"></script> -->
+        <script src="js/vendor.bundle.base.js"></script>
+
+        <script src="js/chart.min.js"></script>
+        <script src="js/chart.js"></script>
+
+        <script src="js/dashboard.js"></script>
 
         <!--Active & Custom JS-->
         <script src="js/main.js"></script>
