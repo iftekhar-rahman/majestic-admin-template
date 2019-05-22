@@ -1,0 +1,64 @@
+.table-responsive {
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+.dataTables_wrapper {
+    padding-left: 0;
+    padding-right: 0;
+}
+.table {
+    margin-bottom: 0;
+}
+.table td {
+    font-size: 14px;
+}
+.table {
+    width: 100%;
+    margin-bottom: 1rem;
+    color: #212529;
+}
+.table thead th {
+    border-top: 0;
+    border-bottom-width: 1px;
+    font-weight: 500;
+    font-size: 16px;
+}
+.dataTables_wrapper .dataTable thead th {
+    border-bottom-width: 0;
+    border: 1px solid rgba(151, 151, 151, 0.18);
+    padding: 1.7rem 0.9375rem;
+    white-space: nowrap;
+    position: relative;
+    cursor: pointer;
+}
+
+.dataTables_wrapper .dataTable tbody tr:nth-child(odd) {
+    background: rgba(238, 238, 238, 0.57);
+}
+.dataTables_wrapper .dataTable tbody tr td {
+    border: 1px solid rgba(151, 151, 151, 0.18);
+    color: #08113b;
+    white-space: nowrap;
+    font-weight: 300;
+    padding: 1.1rem 0.9375rem;
+}
+
+
+.dataTables_wrapper .dataTable thead th:after, .dataTables_wrapper .dataTable thead th:before {
+    top: 0;
+    content: "\f063";
+    position: absolute;
+    right: 20px;
+    top: 55%;
+    transform: translateY(-50%);
+    font-family: fontawesome;
+    font-size: 8px;
+}
+.dataTables_wrapper .dataTable thead th:before {
+    content: "\f062";
+    top: 45%;
+    right: 24px;
+}
+

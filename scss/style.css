@@ -188,6 +188,18 @@ select {
 /*****************************
 00. Footer CSS
 ******************************/
+.footer {
+  background: #f3f3f3;
+  padding: 30px 1rem;
+  transition: all 0.25s ease;
+  -moz-transition: all 0.25s ease;
+  -webkit-transition: all 0.25s ease;
+  -ms-transition: all 0.25s ease;
+  font-size: calc(0.875rem - 0.05rem);
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  border-top: 1px solid rgba(0, 0, 0, 0.06); }
+
 /*****************************
 00. Button CSS
 *****************************/
@@ -312,9 +324,85 @@ button.navbar-toggler span.bar3 {
     color: #000000;
     margin-bottom: 5px; }
 
+.table-responsive {
+  display: block;
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch; }
+
+.dataTables_wrapper {
+  padding-left: 0;
+  padding-right: 0; }
+
+.table {
+  margin-bottom: 0; }
+
+.table td {
+  font-size: 14px; }
+
+.table {
+  width: 100%;
+  margin-bottom: 1rem;
+  color: #212529; }
+
+.table thead th {
+  border-top: 0;
+  border-bottom-width: 1px;
+  font-weight: 500;
+  font-size: 16px; }
+
+.dataTables_wrapper .dataTable thead th {
+  border-bottom-width: 0;
+  border: 1px solid rgba(151, 151, 151, 0.18);
+  padding: 1.7rem 0.9375rem;
+  white-space: nowrap;
+  position: relative;
+  cursor: pointer; }
+
+.dataTables_wrapper .dataTable tbody tr:nth-child(odd) {
+  background: rgba(238, 238, 238, 0.57); }
+
+.dataTables_wrapper .dataTable tbody tr td {
+  border: 1px solid rgba(151, 151, 151, 0.18);
+  color: #08113b;
+  white-space: nowrap;
+  font-weight: 300;
+  padding: 1.1rem 0.9375rem; }
+
+.dataTables_wrapper .dataTable thead th:after, .dataTables_wrapper .dataTable thead th:before {
+  top: 0;
+  content: "\f063";
+  position: absolute;
+  right: 20px;
+  top: 55%;
+  transform: translateY(-50%);
+  font-family: fontawesome;
+  font-size: 8px; }
+
+.dataTables_wrapper .dataTable thead th:before {
+  content: "\f062";
+  top: 45%;
+  right: 24px; }
+
 /*****************************
 00. Home CSS
 *****************************/
+.main-panel {
+  transition: width 0.25s ease, margin 0.25s ease;
+  width: calc(100% - 257px);
+  min-height: calc(100vh - 60px);
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  flex-direction: column; }
+
+.content-wrapper {
+  background: #f3f3f3;
+  padding: 2.1rem 1.04rem;
+  width: 100%;
+  -webkit-flex-grow: 1;
+  flex-grow: 1; }
+
 /*============== .nav-tabs  ================*/
 .nav-tabs {
   border: 1px solid #f3f3f3; }
@@ -331,7 +419,8 @@ button.navbar-toggler span.bar3 {
 
 .nav-tabs .nav-item .nav-link {
   border: 0;
-  background: transparent; }
+  background: transparent;
+  border-bottom: 3px solid transparent; }
 
 .nav-tabs .nav-item .nav-link.active {
   border: 0;
@@ -376,6 +465,35 @@ button.navbar-toggler span.bar3 {
   color: #16181b;
   text-decoration: none;
   background-color: #eaeaf1; }
+
+/*=========.breadcrumb-css=============*/
+.breadcrumb-row h3 {
+  font-size: 21px;
+  line-height: 30px;
+  font-weight: 400; }
+
+.breadcrumb-row .breadcrumb {
+  background: transparent;
+  padding: 0; }
+
+.breadcrumb-row .breadcrumb li {
+  margin: 5px 0;
+  font-size: 16px; }
+
+li.breadcrumb-item.active {
+  color: #6c757d; }
+
+.breadcrumb-row .breadcrumb li a {
+  color: #6493FF; }
+
+.breadcrumb-row {
+  margin-bottom: 20px; }
+
+.breadcrumb-row .breadcrumb-item.active::before {
+  color: #6c757d;
+  content: "\f105";
+  font-family: fontawesome;
+  font-size: 20px; }
 
 /*****************************
 00. Color CSS
