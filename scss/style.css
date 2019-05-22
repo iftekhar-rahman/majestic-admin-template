@@ -1,0 +1,485 @@
+/*
+    Template Name: AutoHQ
+    Author: AutoHQ
+    Description: Bootstrap 4 Template for AutoHQ
+    Version: 1.0
+*/
+/*****************************
+00. Variables CSS
+******************************/
+/*****************************
+00. Mixins CSS
+******************************/
+/*****************************
+00. Helper CSS
+*****************************/
+.boxed-btn {
+  position: relative; }
+
+.boxed-btn:after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  content: "";
+  z-index: -1; }
+
+a, button, img, input, span, .boxed-btn:after {
+  -webkit-transition: all 0.3s ease-in;
+  -moz-transition: all 0.3s ease-in;
+  -ms-transition: all 0.3s ease-in;
+  -o-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in; }
+
+.boxed-btn {
+  font-family: "Open Sans", sans-serif; }
+
+/*****************************
+00. Function CSS
+*****************************/
+/*****************************
+00. Reset CSS
+******************************/
+img {
+  max-width: 100%;
+  height: auto; }
+
+a, a:hover, a:focus, a:active, button, button:focus,
+input, input:focus, select, textarea, textarea:focus, .slick-slide, .slick-slide:focus, .slick-slide:active {
+  outline: 0 solid; }
+
+::selection {
+  background: #90B1C3;
+  color: #fff; }
+
+::-moz-selection {
+  background: #90B1C3;
+  color: #fff; }
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0; }
+
+input[type=number] {
+  -moz-appearance: textfield; }
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+img {
+  max-width: 100%;
+  height: auto; }
+
+a, button {
+  color: inherit;
+  display: inline-block;
+  line-height: inherit;
+  text-decoration: none;
+  cursor: pointer; }
+
+*:focus {
+  outline: none !important; }
+
+a:focus {
+  color: inherit;
+  outline: none;
+  text-decoration: none; }
+
+a:hover {
+  text-decoration: none; }
+
+button, input[type="submit"] {
+  cursor: pointer; }
+
+/*****************************
+00. Common CSS
+******************************/
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  color: #000000;
+  line-height: 24px; }
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0 0 15px;
+  font-weight: 600;
+  font-family: "Roboto", sans-serif; }
+
+p {
+  font-size: 14px;
+  font-weight: 400; }
+  p:last-child {
+    margin-bottom: 0; }
+
+input[type=text], input[type=email], input[type=password], input[type=tel], input[type=url], textarea {
+  background-color: #ECECEC;
+  color: #000;
+  border: 0px;
+  padding: 8px 10px;
+  border-radius: 4px; }
+
+input[type="submit"], button[type="submit"] {
+  cursor: pointer; }
+
+input[type="submit"]:hover, button[type="submit"]:hover {
+  background-color: #0DA0F4;
+  color: #fff; }
+
+.section-title {
+  color: #363636; }
+
+.section-title h2 {
+  font-size: 38px;
+  font-weight: 600;
+  margin-bottom: 10px; }
+
+/*
+======.owl-dots customization=======
+*/
+.owl-dots div {
+  height: 5px;
+  width: 5px;
+  background-color: #BBBBBB;
+  display: inline-block;
+  margin: 0 5px;
+  border-radius: 50%; }
+
+.owl-dots {
+  text-align: center; }
+
+.owl-dots div.active {
+  background-color: #0DA0F4; }
+
+/*
+=====owl nav customization======
+*/
+.owl-nav div {
+  display: inline-block;
+  position: absolute;
+  left: 0px;
+  top: 50%;
+  color: #ADADAD;
+  font-size: 50px;
+  line-height: 60px;
+  margin-top: -35px; }
+
+.owl-nav div.owl-next {
+  left: auto;
+  right: 0px; }
+
+.owl-nav div:hover {
+  color: #0DA0F4; }
+
+select {
+  font-size: 19px;
+  color: #0da0f4;
+  background-color: #fff;
+  border-radius: 5px;
+  border: 0;
+  padding: 8px 10px; }
+
+/*****************************
+00. Header CSS
+*****************************/
+/*****************************
+00. Footer CSS
+******************************/
+/*****************************
+00. Button CSS
+*****************************/
+.boxed-btn {
+  background-color: #DB2D2E;
+  padding: 8px 20px;
+  font-weight: 600;
+  font-size: 17px;
+  border: 0;
+  z-index: 2;
+  text-transform: capitalize; }
+  .boxed-btn:after {
+    background-color: #323232;
+    transform: scaleY(0); }
+  .boxed-btn:hover:after {
+    transform: scaleY(1); }
+
+/*****************************
+00. Navbar CSS
+*****************************/
+.container-scroller {
+  overflow: hidden; }
+
+.site-navbar .navbar-brand-wrapper {
+  background: #ffffff;
+  border-bottom: 1px solid #e3e3e3;
+  transition: width 0.25s ease, background 0.25s ease;
+  -webkit-transition: width 0.25s ease, background 0.25s ease;
+  -moz-transition: width 0.25s ease, background 0.25s ease;
+  -ms-transition: width 0.25s ease, background 0.25s ease;
+  width: 257px;
+  height: 60px;
+  border-right: 1px solid #e3e3e3; }
+
+.site-navbar .navbar-menu-wrapper {
+  background: #ffffff;
+  transition: width 0.25s ease;
+  -webkit-transition: width 0.25s ease;
+  -moz-transition: width 0.25s ease;
+  -ms-transition: width 0.25s ease;
+  color: #9b9b9b;
+  padding-left: 1.062rem;
+  padding-right: 1.062rem;
+  width: calc(100% - 257px);
+  height: 60px;
+  border-bottom: 1px solid #e3e3e3; }
+
+.navbar-menu-wrapper .input-group {
+  position: relative; }
+
+.navbar-menu-wrapper .input-group span {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 30px;
+  height: 100%;
+  text-align: center;
+  line-height: 40px;
+  cursor: pointer;
+  font-size: 12px; }
+
+.navbar-menu-wrapper input[type=text] {
+  padding-left: 33px;
+  width: 100%; }
+
+.navbar-brand-inner-wrapper {
+  margin-left: 20px;
+  margin-right: 15px; }
+
+button.navbar-toggler span {
+  height: 2px;
+  background-color: #4a4a4a;
+  display: block;
+  margin-top: 3px;
+  width: 20px; }
+
+button.navbar-toggler span.bar2 {
+  width: 15px; }
+
+button.navbar-toggler span.bar3 {
+  width: 10px; }
+
+.grid-margin {
+  margin-bottom: 1.875rem; }
+
+.stretch-card {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: stretch;
+  align-items: stretch;
+  -webkit-justify-content: stretch;
+  justify-content: stretch; }
+
+.stretch-card > .card {
+  width: 100%;
+  min-width: 100%; }
+
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 1px solid #e7eaed;
+  border-radius: 0; }
+  .card .card-body {
+    padding: 24px 30px; }
+  .card .card-title {
+    color: #4a4a4a;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 24px;
+    font-size: 14px; }
+  .card h1 {
+    font-size: 40px;
+    color: #000000;
+    margin-bottom: 5px; }
+  .card h4 {
+    font-size: 20px;
+    color: #000000;
+    margin-bottom: 5px; }
+
+/*****************************
+00. Home CSS
+*****************************/
+/*============== .nav-tabs  ================*/
+.nav-tabs {
+  border: 1px solid #f3f3f3; }
+
+.nav-tabs .nav-item {
+  margin-bottom: -1px; }
+
+.nav-tabs .nav-link {
+  background: #f6f8fa;
+  color: #000000;
+  border-radius: 0;
+  border: 1px solid #f3f3f3;
+  padding: 1rem 1.5rem .2rem 1.5rem; }
+
+.nav-tabs .nav-item .nav-link {
+  border: 0;
+  background: transparent; }
+
+.nav-tabs .nav-item .nav-link.active {
+  border: 0;
+  border-bottom: 3px solid #5646ff;
+  color: #4d83ff; }
+
+.dashboard-tabs i {
+  font-size: 35px;
+  margin-right: 20px; }
+
+.dashboard-tabs i.fa-calendar {
+  color: #4D83FF; }
+
+.dashboard-tabs i.fa-dollar {
+  color: #FF4747; }
+
+.dashboard-tabs i.fa-eye {
+  color: #71C016; }
+
+.dashboard-tabs i.fa-download {
+  color: #FFC100; }
+
+.dashboard-tabs i.fa-flag {
+  color: #FF4747; }
+
+.dashboard-tabs h5 {
+  font-size: 16px; }
+
+.dashboard-tabs .dropdown-menu {
+  margin-top: .75rem;
+  font-size: 0.875rem;
+  box-shadow: 0px 1px 15px 1px rgba(230, 234, 236, 0.35);
+  border-radius: 0;
+  border: 1px solid #f3f3f3; }
+
+.dashboard-tabs .dropdown-item {
+  font-size: .875rem;
+  padding: .25rem 1.5rem;
+  font-size: 14px; }
+
+.dashboard-tabs .dropdown-item:hover, .dashboard-tabs .dropdown-item:focus {
+  color: #16181b;
+  text-decoration: none;
+  background-color: #eaeaf1; }
+
+/*****************************
+00. Color CSS
+*****************************/
+.primary-bg {
+  background-color: #db2d2e; }
+
+.boxed-btn, .boxed-btn:hover {
+  color: #ffffff; }
+
+.color--primary {
+  color: #db2d2e !important; }
+
+.color--light {
+  color: #999999 !important; }
+
+.color--black {
+  color: #000000 !important; }
+
+.color--white {
+  color: #ffffff !important; }
+
+.color--dark {
+  color: #333333 !important; }
+
+.color--dark-1 {
+  color: #444444 !important; }
+
+.color--dark-2 {
+  color: #323e52 !important; }
+
+.color--dark-3 {
+  color: #2e2e2e !important; }
+
+.color--dark-4 {
+  color: #212121 !important; }
+
+.bg--1 {
+  background-color: #000000; }
+
+.bg--white {
+  background-color: #ffffff; }
+
+.bg--white-dark {
+  background-color: #f6f6f6; }
+
+.bg--light {
+  background-color: #999999; }
+
+.bg--dark {
+  background-color: #333333; }
+
+.bg--dark-2 {
+  background-color: #323e52; }
+
+.bg--dark-3 {
+  background-color: #2e2e2e; }
+
+.bg--dark-4 {
+  background-color: #212121; }
+
+.bg--dark-5 {
+  background-color: #1d1d1d; }
+
+.bg--black {
+  background-color: #000000; }
+
+.bg--shaft {
+  background-color: #000000; }
+
+.bg--blue {
+  background-color: #2874f0; }
+
+.bg--gray {
+  background-color: #f5f5f5; }
+
+.bg--gray-2 {
+  background-color: #F3F4F8; }
+
+.bg--gray-3 {
+  background-color: #b5b5b5; }
+
+.bg--gray-4 {
+  background-color: #e8e8e8; }
+
+.bg--dark {
+  background-color: #333333; }
+
+.bg--dark-2 {
+  background-color: #323e52; }
+
+.bg--dark-3 {
+  background-color: #2e2e2e; }
+
+.bg--dark-4 {
+  background-color: #212121; }
+
+.bg--zircon-light {
+  background-color: #f2f2f2; }
+
+.yellow-dark-bg {
+  background-color: #e0b70e; }
+
+.green-dark-bg {
+  background-color: #1f4244; }
+
+/*# sourceMappingURL=style.css.map */

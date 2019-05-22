@@ -1,0 +1,29 @@
+/*****************************
+00. Button CSS
+*****************************/
+
+.boxed-btn {
+    background-color: #DB2D2E;
+    padding: 8px 20px;
+    font-weight: 600;
+    font-size: 17px;
+    border: 0;
+    @extend %body-font;
+    @extend %posrelative;
+    z-index: 2;
+    @extend %white-color;
+    text-transform: capitalize;
+    &:after {
+        @extend %pseudoabsolute;
+        background-color: #323232;
+        transform: scaleY(0);
+        @extend %basetransition;
+    }
+    &:hover:after {
+        transform: scaleY(1);
+    }
+    &:hover {
+        @extend %white-color;
+    }
+}
+

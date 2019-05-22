@@ -1,0 +1,43 @@
+/*
+    Template Name: AutoHQ
+    Author: AutoHQ
+    Description: Bootstrap 4 Template for AutoHQ
+    Version: 1.0
+*/
+
+
+// Fonts
+// @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i|Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i');
+
+// ======================================
+//  Partial Imports
+// ======================================
+
+// Utilities
+@import 'helpers/variables';
+@import 'helpers/mixins';
+@import 'helpers/helpers';
+@import 'helpers/functions';
+
+// Base Styles
+@import 'base/reset';
+@import 'base/common';
+
+
+// Layout Styles
+@import 'layouts/header';
+@import 'layouts/footer';
+
+// Components Styles
+@import 'components/button';
+@import 'components/navbar';
+@import 'components/utilities';
+@import 'components/card';
+
+// Pages Styles
+@import 'layouts/home';
+
+// Colors Styles
+@import 'components/color'; 
+
+

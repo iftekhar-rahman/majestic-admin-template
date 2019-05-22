@@ -1,0 +1,67 @@
+/*****************************
+00. Home CSS
+*****************************/
+
+/*============== .nav-tabs  ================*/
+.nav-tabs {
+    border: 1px solid #f3f3f3;
+}
+.nav-tabs .nav-item {
+    margin-bottom: -1px;
+}
+.nav-tabs .nav-link {
+    background: #f6f8fa;
+    color: #000000;
+    border-radius: 0;
+    border: 1px solid #f3f3f3;
+    padding: 1rem 1.5rem .2rem 1.5rem;
+}
+.nav-tabs .nav-item .nav-link {
+    border: 0;
+    background: transparent;
+}
+.nav-tabs .nav-item .nav-link.active {
+    border: 0;
+    border-bottom: 3px solid #5646ff;
+    color: #4d83ff;
+}
+.dashboard-tabs i {
+    font-size: 35px;
+    margin-right: 20px;
+}
+.dashboard-tabs i.fa-calendar {
+    color: #4D83FF;
+}
+.dashboard-tabs i.fa-dollar {
+    color: #FF4747;
+}
+.dashboard-tabs i.fa-eye {
+    color: #71C016;
+}
+.dashboard-tabs i.fa-download {
+    color: #FFC100;
+}
+.dashboard-tabs i.fa-flag {
+    color: #FF4747;
+}
+.dashboard-tabs h5 {
+    font-size: 16px;
+}
+
+.dashboard-tabs .dropdown-menu {
+    margin-top: .75rem;
+    font-size: 0.875rem;
+    box-shadow: 0px 1px 15px 1px rgba(230, 234, 236, 0.35);
+    border-radius: 0;
+    border: 1px solid #f3f3f3;
+}
+.dashboard-tabs .dropdown-item {
+    font-size: .875rem;
+    padding: .25rem 1.5rem;
+    font-size: 14px;
+}
+.dashboard-tabs .dropdown-item:hover, .dashboard-tabs .dropdown-item:focus {
+    color: #16181b;
+    text-decoration: none;
+    background-color: #eaeaf1;
+}

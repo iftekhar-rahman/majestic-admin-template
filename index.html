@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>AutoHQ</title>
+        
+        <!--Libraries-->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/font-awesome.min.css" rel="stylesheet">
+
+        <!--Plugins-->
+        <!-- <link href="css/owl.carousel.min.css" rel="stylesheet"> -->
+        <!-- <link href="css/nice-select.css" rel="stylesheet"> -->
+
+        <!--Theme specific styles-->
+        <link href="scss/style.css" rel="stylesheet">
+        
+        
+        <!--Core jQuery-->
+        <script src="js/jquery-3.3.1.slim.min.js"></script>
+        <script src="js/jquery-migrate-1.4.1.min.js"></script>
+
+        <!--[if lt IE 9]>
+        <script src="//oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <script src="//oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+    </head>
+    <body>
+
+
+        <!-- .container-scroller starts -->
+        <div class="container-scroller">
+            <!-- .site-navbar starts -->
+            <div class="site-navbar">
+                <div class="col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
+                    <div class="navbar-brand-wrapper d-flex justify-content-center">
+                        <div class="navbar-brand-inner-wrapper d-flex justify-content-between align-items-center w-100">  
+                            <a class="navbar-brand brand-logo" href="#"><img src="img/logo.svg" alt="logo"/></a>
+                            <!-- .brand-logo ends -->
+                            <a class="navbar-brand brand-logo-mini d-none" href="#"><img src="img/logo-mini.svg" alt="logo"/></a>
+                            <!-- .brand-logo-mini ends -->
+                            <button class="navbar-toggler navbar-toggler align-self-center" type="button" data-toggle="minimize">
+                                <span class="bar1"></span>
+                                <span class="bar2"></span>
+                                <span class="bar3"></span>
+                            </button>
+                            <!-- .navbar-toggler ends -->
+                        </div>  
+                    </div><!-- .navbar-brand-wrapper ends -->
+                    <div class="navbar-menu-wrapper d-flex align-items-center justify-content-end">
+                        <ul class="navbar-nav mr-lg-4 w-100">
+                            <li class="nav-item nav-search d-none d-lg-block w-100">
+                                <div class="input-group">
+                                    <div class="input-group-prepend">
+                                        <span id="search">
+                                            <i class="fa fa-search"></i>
+                                        </span>
+                                    </div>
+                                    <input type="text" placeholder="Search now" aria-label="search" aria-describedby="search">
+                                </div>
+                            </li><!-- .nav-search ends -->
+                        </ul><!-- .nav-item ends -->
+                        <ul class="navbar-nav navbar-nav-right">
+                            <li class="nav-item dropdown mr-1">
+                                <a class="nav-link count-indicator dropdown-toggle d-flex justify-content-center align-items-center" id="messageDropdown" href="#" data-toggle="dropdown">
+                                    <i class="fa fa-star"></i>
+                                    <span class="count"></span>
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-right navbar-dropdown" aria-labelledby="messageDropdown">
+                                    <p class="mb-0 font-weight-normal float-left dropdown-header">Messages</p>
+                                    <a class="dropdown-item">
+                                        <div class="item-thumbnail">
+                                            <img src="img/face4.jpg" alt="image" class="profile-pic">
+                                        </div>
+                                        <div class="item-content flex-grow">
+                                            <h6 class="ellipsis font-weight-normal">David Grey
+                                            </h6>
+                                            <p class="font-weight-light small-text text-muted mb-0">
+                                            The meeting is cancelled
+                                            </p>
+                                        </div>
+                                    </a><!-- .dropdown-item ends -->
+                                    <a class="dropdown-item">
+                                        <div class="item-thumbnail">
+                                            <img src="img/face4.jpg" alt="image" class="profile-pic">
+                                        </div>
+                                        <div class="item-content flex-grow">
+                                            <h6 class="ellipsis font-weight-normal">Tim Cook
+                                            </h6>
+                                            <p class="font-weight-light small-text text-muted mb-0">
+                                            New product launch
+                                            </p>
+                                        </div>
+                                    </a><!-- .dropdown-item ends -->
+                                    <a class="dropdown-item">
+                                        <div class="item-thumbnail">
+                                            <img src="img/face4.jpg" alt="image" class="profile-pic">
+                                        </div>
+                                        <div class="item-content flex-grow">
+                                            <h6 class="ellipsis font-weight-normal">Johnson
+                                            </h6>
+                                            <p class="font-weight-light small-text text-muted mb-0">
+                                            Upcoming board meeting
+                                            </p>
+                                        </div>
+                                    </a><!-- .dropdown-item ends -->
+                                </div>
+                            </li><!-- .nav-item ends -->
+                            <li class="nav-item dropdown mr-4">
+                                
+                                <!-- <a class="nav-link count-indicator dropdown-toggle d-flex align-items-center justify-content-center notification-dropdown" id="notificationDropdown" href="#" data-toggle="dropdown">
+                                    <i class="fa fa-bell mx-0"></i>
+                                    <span class="count"></span>
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-right navbar-dropdown" aria-labelledby="notificationDropdown">
+                                    <p class="mb-0 font-weight-normal float-left dropdown-header">Notifications</p>
+                                    <a class="dropdown-item">
+                                        <div class="item-thumbnail">
+                                            <div class="item-icon bg-success">
+                                                <i class="fa fa-star"></i>
+                                            </div>
+                                        </div>
+                                        <div class="item-content">
+                                            <h6 class="font-weight-normal">Application Error</h6>
+                                            <p class="font-weight-light small-text mb-0 text-muted">
+                                            Just now
+                                            </p>
+                                        </div>
+                                    </a>
+                                    <a class="dropdown-item">
+                                        <div class="item-thumbnail">
+                                            <div class="item-icon bg-warning">
+                                            <i class="mdi mdi-settings mx-0"></i>
+                                            </div>
+                                        </div>
+                                        <div class="item-content">
+                                            <h6 class="font-weight-normal">Settings</h6>
+                                            <p class="font-weight-light small-text mb-0 text-muted">
+                                            Private message
+                                            </p>
+                                        </div>
+                                    </a>
+                                    <a class="dropdown-item">
+                                        <div class="item-thumbnail">
+                                            <div class="item-icon bg-info">
+                                                <i class="mdi mdi-account-box mx-0"></i>
+                                            </div>
+                                        </div>
+                                        <div class="item-content">
+                                            <h6 class="font-weight-normal">New user registration</h6>
+                                            <span class="font-weight-light small-text mb-0 text-muted">
+                                            2 days ago
+                                            </span>
+                                        </div>
+                                    </a>
+                                </div> -->
+                            </li>
+                            <!-- <li class="nav-item nav-profile dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" id="profileDropdown">
+                                    <img src="images/faces/face5.jpg" alt="profile"/>
+                                    <span class="nav-profile-name">Louis Barnett</span>
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-right navbar-dropdown" aria-labelledby="profileDropdown">
+                                    <a class="dropdown-item">
+                                        <i class="mdi mdi-settings text-primary"></i>
+                                    Settings
+                                    </a>
+                                    <a class="dropdown-item">
+                                        <i class="mdi mdi-logout text-primary"></i>
+                                    Logout
+                                    </a>
+                                </div>
+                            </li> -->
+                        </ul><!-- .nav-item ends -->
+                    </div><!-- .navbar-menu-wrapper ends -->
+                </div><!-- .col ends -->
+            </div>
+            <!-- .site-navbar ends -->
+        </div>
+        <!-- .container-scroller ends -->
+
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+
+        <div class="container-fluid">
+
+<!-- tab starts here -->
+
+<!-- .row starts -->
+<div class="row">
+    <div class="col-md-12 grid-margin stretch-card">
+        <!-- .card starts -->
+        <div class="card">
+            <!-- .card-body starts -->
+            <div class="card-body dashboard-tabs p-0">
+                <!-- .nav-tabs starts -->
+                <ul class="nav nav-tabs px-4" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link active" id="overview-tab" data-toggle="tab" href="#overview" role="tab" aria-controls="overview" aria-selected="true">Overview</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="sales-tab" data-toggle="tab" href="#sales" role="tab" aria-controls="sales" aria-selected="false">Sales</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="purchases-tab" data-toggle="tab" href="#purchases" role="tab" aria-controls="purchases" aria-selected="false">Purchases</a>
+                    </li>
+                </ul><!-- .nav-tabs ends -->
+                <!-- .tab-content starts -->
+                <div class="tab-content py-0 px-0">
+                    <!-- .tab-pane starts -->
+                    <div class="tab-pane fade show active" id="overview" role="tabpanel" aria-labelledby="overview-tab">
+                        <div class="d-flex flex-wrap justify-content-xl-between">
+                            <div class="d-none d-xl-flex border-md-right flex-grow-1 align-items-center justify-content-center p-3 item">
+                                <i class="fa fa-calendar"></i>
+                                <div class="d-flex flex-column justify-content-around">
+                                <small class="mb-1 text-muted">Start date</small>
+                                    <div class="dropdown">
+                                        <a class="btn btn-secondary dropdown-toggle p-0 bg-transparent border-0 text-dark shadow-none font-weight-medium" href="#" role="button" id="dropdownMenuLinkA" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            <h5 class="mb-0 d-inline-block">26 Jul 2018</h5>
+                                        </a>
+                                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLinkA">
+                                            <a class="dropdown-item" href="#">12 Aug 2018</a>
+                                            <a class="dropdown-item" href="#">22 Sep 2018</a>
+                                            <a class="dropdown-item" href="#">21 Oct 2018</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex border-md-right flex-grow-1 align-items-center justify-content-center p-3 item">
+                                <i class="fa fa-dollar"></i>
+                                <div class="d-flex flex-column justify-content-around">
+                                    <small class="mb-1 text-muted">Downloads</small>
+                                    <h5 class="mr-2 mb-0">2233783</h5>
+                                </div>
+                            </div>
+                            <div class="d-flex border-md-right flex-grow-1 align-items-center justify-content-center p-3 item">
+                                <i class="fa fa-eye"></i>
+                                <div class="d-flex flex-column justify-content-around">
+                                    <small class="mb-1 text-muted">Total views</small>
+                                    <h5 class="mr-2 mb-0">9833550</h5>
+                                </div>
+                            </div>
+                            <div class="d-flex border-md-right flex-grow-1 align-items-center justify-content-center p-3 item">
+                                <i class="fa fa-download"></i>
+                                <div class="d-flex flex-column justify-content-around">
+                                    <small class="mb-1 text-muted">Revenue</small>
+                                    <h5 class="mr-2 mb-0">$577545</h5>
+                                </div>
+                            </div>
+                            <div class="d-flex py-3 border-md-right flex-grow-1 align-items-center justify-content-center p-3 item">
+                                <i class="fa fa-flag"></i>
+                                <div class="d-flex flex-column justify-content-around">
+                                    <small class="mb-1 text-muted">Flagged</small>
+                                    <h5 class="mr-2 mb-0">3497843</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- .tab-pane ends -->
+                    <div class="tab-pane fade" id="sales" role="tabpanel" aria-labelledby="sales-tab">
+                        <div class="d-flex flex-wrap justify-content-xl-between">
+                            <div class="d-none d-xl-flex border-md-right flex-grow-1 align-items-center justify-content-center p-3 item">
+                                <i class="fa fa-calendar"></i>
+                                <div class="d-flex flex-column justify-content-around">
+                                <small class="mb-1 text-muted">Start date</small>
+                                    <div class="dropdown">
+                                        <a class="btn btn-secondary dropdown-toggle p-0 bg-transparent border-0 text-dark shadow-none font-weight-medium" href="#" role="button" id="dropdownMenuLinkA" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            <h5 class="mb-0 d-inline-block">26 Jul 2018</h5>
+                                        </a>
+                                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLinkA">
+                                            <a class="dropdown-item" href="#">12 Aug 2018</a>
+                                            <a class="dropdown-item" href="#">22 Sep 2018</a>
+                                            <a class="dropdown-item" href="#">21 Oct 2018</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex border-md-right flex-grow-1 align-items-center justify-content-center p-3 item">
+                                <i class="fa fa-dollar"></i>
+                                <div class="d-flex flex-column justify-content-around">
+                                    <small class="mb-1 text-muted">Downloads</small>
+                                    <h5 class="mr-2 mb-0">2233783</h5>
+                                </div>
+                            </div>
+                            <div class="d-flex border-md-right flex-grow-1 align-items-center justify-content-center p-3 item">
+                                <i class="fa fa-eye"></i>
+                                <div class="d-flex flex-column justify-content-around">
+                                    <small class="mb-1 text-muted">Total views</small>
+                                    <h5 class="mr-2 mb-0">9833550</h5>
+                                </div>
+                            </div>
+                            <div class="d-flex border-md-right flex-grow-1 align-items-center justify-content-center p-3 item">
+                                <i class="fa fa-download"></i>
+                                <div class="d-flex flex-column justify-content-around">
+                                    <small class="mb-1 text-muted">Revenue</small>
+                                    <h5 class="mr-2 mb-0">$577545</h5>
+                                </div>
+                            </div>
+                            <div class="d-flex py-3 border-md-right flex-grow-1 align-items-center justify-content-center p-3 item">
+                                <i class="fa fa-flag"></i>
+                                <div class="d-flex flex-column justify-content-around">
+                                    <small class="mb-1 text-muted">Flagged</small>
+                                    <h5 class="mr-2 mb-0">3497843</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- .tab-pane ends -->
+                    <div class="tab-pane fade" id="purchases" role="tabpanel" aria-labelledby="purchases-tab">
+                        <div class="d-flex flex-wrap justify-content-xl-between">
+                            <div class="d-none d-xl-flex border-md-right flex-grow-1 align-items-center justify-content-center p-3 item">
+                                <i class="fa fa-calendar"></i>
+                                <div class="d-flex flex-column justify-content-around">
+                                <small class="mb-1 text-muted">Start date</small>
+                                    <div class="dropdown">
+                                        <a class="btn btn-secondary dropdown-toggle p-0 bg-transparent border-0 text-dark shadow-none font-weight-medium" href="#" role="button" id="dropdownMenuLinkA" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            <h5 class="mb-0 d-inline-block">26 Jul 2018</h5>
+                                        </a>
+                                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLinkA">
+                                            <a class="dropdown-item" href="#">12 Aug 2018</a>
+                                            <a class="dropdown-item" href="#">22 Sep 2018</a>
+                                            <a class="dropdown-item" href="#">21 Oct 2018</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex border-md-right flex-grow-1 align-items-center justify-content-center p-3 item">
+                                <i class="fa fa-dollar"></i>
+                                <div class="d-flex flex-column justify-content-around">
+                                    <small class="mb-1 text-muted">Downloads</small>
+                                    <h5 class="mr-2 mb-0">2233783</h5>
+                                </div>
+                            </div>
+                            <div class="d-flex border-md-right flex-grow-1 align-items-center justify-content-center p-3 item">
+                                <i class="fa fa-eye"></i>
+                                <div class="d-flex flex-column justify-content-around">
+                                    <small class="mb-1 text-muted">Total views</small>
+                                    <h5 class="mr-2 mb-0">9833550</h5>
+                                </div>
+                            </div>
+                            <div class="d-flex border-md-right flex-grow-1 align-items-center justify-content-center p-3 item">
+                                <i class="fa fa-download"></i>
+                                <div class="d-flex flex-column justify-content-around">
+                                    <small class="mb-1 text-muted">Revenue</small>
+                                    <h5 class="mr-2 mb-0">$577545</h5>
+                                </div>
+                            </div>
+                            <div class="d-flex py-3 border-md-right flex-grow-1 align-items-center justify-content-center p-3 item">
+                                <i class="fa fa-flag"></i>
+                                <div class="d-flex flex-column justify-content-around">
+                                    <small class="mb-1 text-muted">Flagged</small>
+                                    <h5 class="mr-2 mb-0">3497843</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- .tab-pane ends -->
+                </div><!-- .tab-content ends -->
+            </div><!-- .card-body starts -->
+        </div><!-- .card ends -->
+    </div><!-- .col ends -->
+</div><!-- .row ends -->
+
+<!-- tab ends here -->
+
+                    
+
+<br/>
+<br/>
+<br/>
+
+
+            <div class="row">
+                <!-- .just copy this section -->
+                <div class="col-md-7 grid-margin stretch-card">
+                    <div class="card">
+                        <div class="card-body">
+                            <h3 class="card-title">Cash deposits</h3>
+                            <p class="mb-4">To start a blog, think of a topic about and first brainstorm party is ways to write details</p>
+                            <!-- <div id="cash-deposits-chart-legend" class="d-flex justify-content-center pt-3"></div> -->
+                            <!-- <canvas id="cash-deposits-chart"></canvas> -->
+                            <img style="width: 100%" src="img/chart-1.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-5 grid-margin stretch-card">
+                    <div class="card">
+                        <div class="card-body">
+                            <h3 class="card-title">Total sales</h3>
+                            <h1>$ 28835</h1>
+                            <h4>Gross sales over the years</h4>
+                            <p class="text-muted">Today, many people rely on computers to do homework, work, and create or store useful information. Therefore, it is important </p>
+                            <!-- <div id="total-sales-chart-legend"></div>  -->
+                        </div>
+                        <!-- <canvas id="total-sales-chart"></canvas> -->
+                        <img src="img/chart-2.png" alt="">
+                    </div>
+                </div>
+                <!-- .just copy this section -->
+
+            </div>
+        </div>
+        <!--Libraries-->
+        <script src="js/bootstrap.bundle.min.js"></script>       
+
+        <!--Plugins-->
+        <!-- <script src="js/owl.carousel.min.js"></script> -->
+        <!-- <script src="js/jquery.nice-select.min.js"></script> -->
+
+        <!--Active & Custom JS-->
+        <script src="js/main.js"></script>
+    </body>
+</html>
